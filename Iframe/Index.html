@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width,user-scalable=no">
+    <title>Uso iframe</title>
+  </head>
+  <body>
+    <!--<iframe src="" width="" height=""></iframe> sirve para llamar otras paginas web en nuestra misma paginas -->
+<iframe src="https://www.nextu.com" width="300px" height="300px"></iframe>
+<!-- ifreme con el atributo name -->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe">no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox que evita que aprescan popup ( son paginas emergentes en nuestras paginas web)-->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe" sandbox>no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox que evita que aprescan popup ( son paginas emergentes en nuestras paginas web)-->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe" sandbox>no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox="allow-forms" se utiliza para envien datos si el cliente diligencia formularios-->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe" sandbox="allow-forms">no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox="allow-popup" perpite que se cargen paginas emergentes y si no se tiene el navegador las bloqueara-->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe" sandbox="allow-popups">no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox="allow-scripts" permite que ejecute codigos java script por elladodel cliente-->
+<iframe src="https://www.nextu.com" width="300px" height="300px" name="nextu pagina iframe" sandbox="allow-scripts">no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox="allow-top-navigation" y srcdoc  que permite ingresar codigo html-->
+<iframe src="https://www.nextu.com" srcdoc="" width="300px" height="300px" name="nextu pagina iframe" sandbox="allow-top-navigation">no se puede cragar el sitio</iframe>
+<!-- iframe con el atributo sandbox="allowfullscreen" para ver la pantalla completa -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15908.025124753878!2d-74.11811190000002!3d4.592894650000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1537238131054" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </body>
+</html>

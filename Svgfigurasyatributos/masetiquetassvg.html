@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width,user-scalable=no">
+    <title>mas eqtiquetas svg complementarias</title>
+  </head>
+  <body>
+    <ol>
+<li> etiqueta g</li>
+<!--la eqtiqueta g sirve para gregar mas figuras dentro de si mismo
+ se identifica con un nombre la figura con el atributo id=
+despues se configura color(fill), stroke(borde),stroke-width(tamaño del borde)
+en la parte inferior se llama la figuras que deb mostrar el sistema.-->
+<svg width="1200" height="1200"   viewbox="0 0 1200 1200">
+  <g id="agrupacion1" fill="blue" stroke="red" stroke-width="2">
+<rect  x="150" y="250" width="80" height="80" />
+<rect  x="350" y="150" width="150" height="150" />
+</g>
+</svg>
+
+<li>etiqueta defs definir un codigo para utilizarlo en otra parte,
+     linearGradient para llamra los parametros de colores o degradados
+     para los colores o relleno de nuestra figuras degradado lineal</li>
+<svg width="1200" height="1200"   viewbox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="grandiente1">
+      <stop offset="20%" stop-color="#3E5A20"/> <!--verde-->
+      <stop offset="90%" stop-color="#5A2054"/>  <!--morado-->
+    </linearGradient>
+    </defs>
+<rect  x="100" y="100" width="200" height="200"
+ fill="url(#grandiente1)" />
+    </svg>
+
+<li>atributo style para cotner dentro el llamado de color</li>
+    <svg width="1200" height="1200" viewbox="0 0 1200 1200">
+<defs>
+<linearGradient id="grandiente2">
+<stop offset="20%" style="stop-color: #3E5A20;"/>
+<stop offset="90%" style="stop-color: #20265A;"/>
+</linearGrandient>
+</defs>
+<rect x="100" y="100" width="200" height="200"
+fill="url(#grandiente2)" />
+</svg>
+
+<li> atributo style con stop-opacity para controlar la opacidad</li>
+
+<svg height="150" width="400">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<li>etiqueta desc para asignar una descripción y title para titulos </li>
+
+<svg height="150" width="400">
+<g>
+<title>Etiqueta title para SVG</title>
+<desc>GRADIANTE BASICO COMO EJERCICIO</desc>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" style="stop-color:rgb(500,255,0);stop-opacity:5" />
+  <stop offset="100%" style="stop-color:rgb(205,0,0);stop-opacity:5" />
+</linearGradient>
+</g>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+</svg>
+
+<li>Etiqueta defs define una varibale para poder llamar despues
+   y use para agregar diferentes figuras con la variable definida para eso usuamos
+ x y ubicación carteciana
+ xlink:href para llamar la variable
+</li>
+<svg  width="1200" height="1200" viewbox="0 0 1200 1200">
+  <defs>
+  <rect id="recta" fill="red" stroke="black" stroke-width=2 width=150 height=120>
+  </defs>
+<use x=100 y=200 xlink:href="#recta"/>
+<use x=300 y=350 xlink:href="#recta"/>
+<use x=400 y=500 xlink:href="#recta"/>
+</svg>
+
+<li>etiqueta path para
+
+ M = moveto
+L = lineto
+H = horizontal lineto
+V = vertical lineto
+C = curveto
+S = smooth curveto
+Q = quadratic Bézier curve
+T = smooth quadratic Bézier curveto
+A = elliptical Arc
+Z = closepath </li>
+<h1> M  es el inicio del trazo y z el fin</h1>
+
+<svg width="1200" height="1200" viewbox="0 0 1200 1200">
+  <path  d="M150 0 L75 200 L225 200 Z" FILL="BLUE" stroke="black" stroke-width=1>
+  </path>
+</svg>
+
+
+<svg height="210" width="400">
+  <path d="M150 0 L75 200 L225 200 Z" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+    </ol>
+  </body>
+</html>

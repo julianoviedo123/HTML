@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, maximumun-scale=1", widht=device-width>
+    <title>Etiqueta SVG e imagen</title>
+  </head>
+  <body>
+    <p>Etiqueta image es propia de svg,
+      y diferente al img para llamara el dato se utiliza
+    xlink:href para llamar el direccionamiento width, height y los punto x y   </p>
+    <svg style="border: 1px solid black;">
+    <image xlink:href="img/cv.svg" width="100px" height="100px" x="1px" y="1px"></image>
+    </svg>
+    <p> </p>
+    <p>Etiqueta img con svg</p>
+    <svg>
+      <img src="img/piston.svg" style="border: 1px solid black;" width="1000px" height="1000px" x="1px" y="1px">
+    </svg>
+
+    <p>si queremos definir nuestro propio espacio de grafico con la etiqueta svg llamamos viewBox , sirve para crear un
+      subespacio de trabajo donde se genera los mismos epacios de la eqtiqueta</p>
+    <svg width="1200px" height="400px" viewBox="0 0 1200 400">
+  <image xlink:href="img/cv.svg" width="400px" height="400px" x="1px" y="1px"></image>
+    </svg>
+  </body>
+</html>

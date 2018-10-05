@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width,user-scalable=no">
+    <title>Formulario y atributos</title>
+  </head>
+  <body>
+    <!--<form></form> se utiliza para crear el contenedor del formulario-->
+    <form>
+      <!--<fieldset></fieldset>contenido del Formulario-->
+       <fieldset>
+         <!--<legend></legend> titulo del formulario-->
+         <!--<legend></legend> titulo del formulario-->
+        <legend> Titulo del formulario</legend>
+        <!--<label for=""></label> titulo del campoa diligenciar-->
+        <label for="Nombre">Nombre</label>
+        <!--<input type="text" name="" value=""> campo a diligenciar-->
+      <input type="text">
+      <p>diferentes input para llenar datos</p>
+      <p>color</p>
+      <input type="color">
+      <p>fecha</p>
+      <input type="date">
+      <p>fecha hora</p>
+      <input type="datetime">
+      <p>fecha hora local</p>
+      <input type="datetime-local">
+      <p>email</p>
+      <input type="email">
+      <p>mes</p>
+      <input type="month">
+      <p>numeros</p>
+      <input type="number">
+      <p>rango de numeros </p>
+      <input type="range" min="1" max="10">
+      <p>busqueda </p>
+      <input type="search">
+      <p>telefono</p>
+      <input type="tel">
+      <p>hora</p>
+      <input type="time">
+      <p>direccion url</p>
+      <input type="url">
+      <p>semana</p>
+      <input type="week">
+      <p>reset boton para limpiar el formulario</p>
+      <input type="reset">
+      <p>boton html</p>
+      <input type="button" value="boton html">
+      <p>envio de formularioutilizado para enviar información a base de datos</p>
+      <input type="submit">
+       <!--mas input con funcionalidades -->
+      <p>campo de texto deshabilitado</p>
+      <input type="text" disabled value="texto">
+      <p>campo de texto de solo lectura</p>
+      <input type="text" readonly value="texto">
+      <p>tectode maximo 5 caracteres(escribir el nombre alejandro)</p>
+      <input type="text" maxlength="5">
+      <p>campo para ingresar un número con valor maximo</p>
+      <input type="number" max="100">
+      <p>campo para ingresar un número con valor minimo</p>
+      <input type="number" min="10">
+      <p>campo predeterminado con texto para que el campo este lleno</p>
+      <input type="text" value="nombre ejemplo">
+      <p>campo númerico con paso 5  (para incrementos)</p>
+      <input type="number" step="5">
+      <p>atributo para nombrar la etiqueta</p>
+      <input type="text" placeholder="ingrese su nombre ">
+      <p>atributo para nombrar la etiqueta</p>
+      <input type="text" name="campo_apellido">
+      <p>atributo para asignar un identificador unico</p>
+      <input type="email" id="email_usuario">
+       <!--atributos tipo lista-->
+       <legend>formulario con controles</legend>
+       <select>
+         <option>ciudad 1</option>
+         <option>ciudad 2</option>
+         <option>ciudad 3</option>
+      <!--atributo de texto conuna mayor area de escritura
+      , dentro tiene mas atributos como cols y rows para las columnas y filas -->
+<textarea name="area_texto" rows="8" cols="48"></textarea>
+<!--etiquetas de enunciado-->
+<h1>hola</h1>
+<em>hola</em>
+<strong>hola</strong>
+<b>hola</b>
+<p>hola</p>
+<!--etiquetas mas usada para los <input>-->
+<label for="nombre">texto de label</label>
+<input type="text" name="name" id="nombre">
+       </select>
+       </fieldset>
+
+       <!--navegadores tiene la forma de mostrar
+       el render para poder saber si funciona en
+       el navegador se puede entrar a la 
+       siguiente página https://caniuse.com/#search=color-->
+    </form>
+  </body>
+</html>
