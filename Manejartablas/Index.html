@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width,user-scalable=no">
+    <title>Manejo de Tablas</title>
+  </head>
+  <body>
+    <!--para crear tablas se utiiza <table> </table>
+    se utiliza el border para el tamaño de la tabla
+    cellpadding ANCHURA INTERIOR DE CELDA
+    cellspacing ESPACIO ENTRE CELDAS)
+    dentro de esta se crealas filas y columnas
+  filas<tr> </tr> columnas <td></td>-->
+    <table border="1" cellpadding="10" cellspacing="0">
+      <!--para desarrollar bien la pagina con tablas se recomienda utilizar
+    <thead></thead> encabezado <tbody></tbody> el detalle <tfoot></tfoot> pie de pagina-->
+      <thead>
+        <tr>
+          <!--para ponerlo en negrilla debes de td poner th-->
+          <th>Código</th>
+          <th>Producto</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>com001</td>
+          <td>computador</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <td>com002</td>
+          <td rowspan="2">computador</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <td>com002</td>
+          <td>10000</td>
+        </tr>
+      </tbody>
+<tfoot>
+  <!--para unificar columas colspan y para unificar filas utilizar rowspan-->
+  <tr>
+    <th colspan="2"> Total</th>
+    <td>30000</td>
+  </tr>
+</tfoot>
+
+    </table>
+
+  </body>
+</html>
